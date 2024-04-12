@@ -1,0 +1,73 @@
+.admin-header-heading {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+  color: #373e4a;
+  text-align: center;
+}
+
+.admin-header-logout-profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.admin-header-profile-container {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.admin-header-profile-container:hover {
+  text-decoration: none;
+}
+
+.admin-header-profile-icon {
+  color: #373e4a;
+  font-size: 18px;
+  margin-right: 3px;
+}
+
+.admin-header-profile-text {
+  color: #373e4a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 3px;
+}
+
+.admin-header-logout-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.admin-header-logout-button:focus {
+  outline: none;
+}
+
+.admin-header-logout-text {
+  color: #373e4a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 3px;
+}
+
+.admin-header-logout-icon {
+  color: #373e4a;
+  font-size: 18px;
+  margin-left: 3px;
+}
+
+.admin-header-hr-line {
+  border: 1px solid #eeeeee;
+  width: 100%;
+}

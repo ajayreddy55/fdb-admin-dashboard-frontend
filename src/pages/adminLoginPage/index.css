@@ -1,0 +1,30 @@
+.login-page-main-container {
+  background-color: #ffffff;
+  padding: 18px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-page-logo-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.login-page-logo-image {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-logo-image {
+    width: 90%;
+    max-width: 510px;
+    max-height: 510px;
+    height: 90%;
+  }
+}

@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+import { Route, Routes } from "react-router-dom";
+import SignupPage from "./pages/AdminSignupPage";
+import AdminSignupVerifyPage from "./pages/adminSignupVerifyPage";
+import AdminLoginPage from "./pages/adminLoginPage";
+import AdminDashboardPage from "./pages/adminDashPage";
+import ProtectedRoute from "./components/protectedRoute/ProtectedRoute";
+import VendorDashboardPage from "./pages/vendorDashPage";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route exact path="/admin-signup" element={<SignupPage />} />
+      <Route
+        exact
+        path="/admin-signup-verify-page/:token"
+        element={<AdminSignupVerifyPage />}
+      />
+      <Route exact path="/admin-login" element={<AdminLoginPage />} />
+      <Route element={<ProtectedRoute />}>
+        <Route exact path="/admin-dashboard" element={<AdminDashboardPage />} />
+      </Route>
+      <Route exact path="/vendor-dashboard" element={<VendorDashboardPage />} />
+    </Routes>
   );
-}
+};
 
 export default App;

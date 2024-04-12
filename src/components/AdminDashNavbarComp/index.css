@@ -1,0 +1,94 @@
+.admin-navbar-container {
+  background-color: #313fa7;
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.admin-navbar-inner-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.admin-navbar-logo {
+  width: 40px;
+  margin-right: 4px;
+}
+
+.admin-dashboard-logo-name-nav {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.admin-menu-button-navbar {
+  background-color: rgba(69, 74, 84, 0.4);
+  border: 1px solid #454a54;
+  outline: none;
+  cursor: pointer;
+  padding: 6px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 8px;
+  border-radius: 2px;
+}
+
+.admin-menu-button-navbar:focus {
+  outline: none;
+}
+
+.admin-menu-button-navbar:hover {
+  background-color: rgba(69, 74, 84, 0.9);
+}
+
+.admin-menu-button-icon-navbar {
+  color: #eeeded;
+  font-size: 22px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.admin-navbar-menu-container {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #454a54;
+}
+
+.admin-navbar-menu-item-container {
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  text-decoration: none;
+}
+
+.admin-navbar-menu-item-container:hover {
+  text-decoration: none;
+  background-color: #42424230;
+}
+
+.admin-navbar-menu-item-container-active {
+  background-color: #f7f7f7;
+}
+
+.admin-navbar-menu-item-icon {
+  color: #525672;
+  margin-right: 15px;
+  font-size: 15px;
+}
+
+.admin-navbar-menu-item-text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #868aa8;
+}
