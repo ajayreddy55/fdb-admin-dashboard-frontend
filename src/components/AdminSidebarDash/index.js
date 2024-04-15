@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { TbCategoryFilled } from "react-icons/tb";
 
 import FDBLogo from "../../assets/images/dubaiFdblogo.png";
 
@@ -55,12 +56,44 @@ const AdminSidebarCompo = (props) => {
                   ? "admin-sidebar-menu-item-container admin-sidebar-menu-item-container-active"
                   : "admin-sidebar-menu-item-container"
               }
+              to={"/admin-dashboard"}
             >
               <i className="fa-solid fa-desktop admin-sidebar-menu-item-icon"></i>
               <span
                 className={`admin-sidebar-menu-item-text ${sidebarNameToggle}`}
               >
                 Dashboard
+              </span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-sidebar-menu-item-container admin-sidebar-menu-item-container-active"
+                  : "admin-sidebar-menu-item-container"
+              }
+              to={"/admin-popular-categories"}
+            >
+              {/* <i className="fa-solid fa-desktop admin-sidebar-menu-item-icon"></i> */}
+              <TbCategoryFilled className="admin-sidebar-menu-item-icon admin-sidebar-menu-item-icon-category" />
+              <span
+                className={`admin-sidebar-menu-item-text ${sidebarNameToggle}`}
+              >
+                Popular Categories
+              </span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-sidebar-menu-item-container admin-sidebar-menu-item-container-active"
+                  : "admin-sidebar-menu-item-container"
+              }
+              to={"/admin-search-queries"}
+            >
+              <i className="fa-solid fa-magnifying-glass admin-sidebar-menu-item-icon"></i>
+              <span
+                className={`admin-sidebar-menu-item-text ${sidebarNameToggle}`}
+              >
+                Search Queries
               </span>
             </NavLink>
           </div>

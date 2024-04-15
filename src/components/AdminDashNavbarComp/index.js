@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 import FDBLogo from "../../assets/images/dubaiFdblogo.png";
+import { TbCategoryFilled } from "react-icons/tb";
 
 import "./index.css";
 
@@ -32,9 +33,37 @@ const AdminDashNavbarCompo = () => {
                   ? "admin-navbar-menu-item-container admin-navbar-menu-item-container-active"
                   : "admin-navbar-menu-item-container"
               }
+              to={"/admin-dashboard"}
             >
               <i className="fa-solid fa-desktop admin-navbar-menu-item-icon"></i>
               <span className="admin-navbar-menu-item-text">Dashboard</span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-navbar-menu-item-container admin-navbar-menu-item-container-active"
+                  : "admin-navbar-menu-item-container"
+              }
+              to={"/admin-popular-categories"}
+            >
+              {/* <i className="fa-solid fa-desktop admin-navbar-menu-item-icon"></i> */}
+              <TbCategoryFilled className="admin-navbar-menu-item-icon admin-navbar-menu-item-icon-category" />
+              <span className="admin-navbar-menu-item-text">
+                Popular Categories
+              </span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-navbar-menu-item-container admin-navbar-menu-item-container-active"
+                  : "admin-navbar-menu-item-container"
+              }
+              to={"/admin-search-queries"}
+            >
+              <i className="fa-solid fa-magnifying-glass admin-navbar-menu-item-icon"></i>
+              <span className="admin-navbar-menu-item-text">
+                Search Queries
+              </span>
             </NavLink>
           </div>
         </div>

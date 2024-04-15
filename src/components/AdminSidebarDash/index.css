@@ -88,7 +88,7 @@
 }
 
 .admin-sidebar-menu-item-icon {
-  color: #525672;
+  color: #868aa8;
   margin-right: 15px;
   font-size: 15px;
 }
@@ -99,4 +99,8 @@
   font-size: 16px;
   font-weight: 500;
   color: #868aa8;
+}
+
+.admin-sidebar-menu-item-icon-category {
+  font-size: 18px;
 }

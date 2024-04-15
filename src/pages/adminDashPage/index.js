@@ -14,7 +14,6 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
-  ResponsiveContainer,
   BarChart,
   Bar,
   Rectangle,
@@ -264,56 +263,9 @@ const AdminDashboardPage = () => {
                         </div>
                       </Link>
                     </div>
-                    <div className="col-12 col-md-4 col-lg-3 min-h-100 mt-3 mb-2">
-                      <Link className="admin-dashboard-card-link-item me-2">
-                        <div className="admin-dashboard-card admin-dashboard-card-search-queries">
-                          <div className="admin-dashboard-card-stats-container">
-                            <h3 className="admin-dashboard-card-text">
-                              Search Queries
-                            </h3>
-                            <ul className="admin-dashboard-card-list-container-search">
-                              <li className="admin-dashboard-card-list-item-search">
-                                AC Technicians
-                              </li>
-                              <li className="admin-dashboard-card-list-item-search">
-                                Tutors
-                              </li>
-                              <li className="admin-dashboard-card-list-item-search">
-                                Salons
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                    <div className="col-12 col-md-4 col-lg-3 min-h-100 mt-3 mb-2">
-                      <Link className="admin-dashboard-card-link-item me-2">
-                        <div className="admin-dashboard-card admin-dashboard-card-pop-cat">
-                          <div className="admin-dashboard-card-stats-container">
-                            <h3 className="admin-dashboard-card-text">
-                              Popular Categories
-                            </h3>
-                            <ul className="admin-dashboard-card-list-container-search">
-                              <li className="admin-dashboard-card-list-item-search">
-                                Restaurants
-                              </li>
-                              <li className="admin-dashboard-card-list-item-search">
-                                Hotels
-                              </li>
-                              <li className="admin-dashboard-card-list-item-search">
-                                Education
-                              </li>
-                              <li className="admin-dashboard-card-list-item-search">
-                                Beauty&Spa
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
                   </div>
-                  <div className="row mt-3 mb-2">
-                    <div className="col-12 col-md-6">
+                  <div className="row mt-4 mb-2">
+                    <div className="col-12 col-md-6 mt-3">
                       <div className="w-100 me-2">
                         {/* <ResponsiveContainer width={"50%"} height={"50%"}> */}
                         <LineChart
@@ -342,7 +294,7 @@ const AdminDashboardPage = () => {
                         {/* </ResponsiveContainer> */}
                       </div>
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-md-6 mt-3">
                       {/* <ResponsiveContainer width="100%" height="100%"> */}
                       <div className="w-100">
                         <BarChart
@@ -371,7 +323,7 @@ const AdminDashboardPage = () => {
 
                       {/* </ResponsiveContainer> */}
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-md-6 mt-3">
                       <div className="w-100 me-2">
                         {/* <ResponsiveContainer width={"50%"} height={"50%"}> */}
                         <LineChart
