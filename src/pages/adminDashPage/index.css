@@ -142,3 +142,9 @@
   font-weight: 500;
   margin-top: 10px;
 }
+
+.admin-graph-main-container {
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+}
