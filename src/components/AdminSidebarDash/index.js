@@ -58,7 +58,7 @@ const AdminSidebarCompo = (props) => {
               }
               to={"/admin-dashboard"}
             >
-              <i className="fa-solid fa-desktop admin-sidebar-menu-item-icon"></i>
+              <i className="fa-solid fa-gauge-high admin-sidebar-menu-item-icon"></i>
               <span
                 className={`admin-sidebar-menu-item-text ${sidebarNameToggle}`}
               >
@@ -94,6 +94,81 @@ const AdminSidebarCompo = (props) => {
                 className={`admin-sidebar-menu-item-text ${sidebarNameToggle}`}
               >
                 Search Queries
+              </span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-sidebar-menu-item-container admin-sidebar-menu-item-container-active"
+                  : "admin-sidebar-menu-item-container"
+              }
+              to={"/admin-dash-users"}
+            >
+              <i className="fa-solid fa-users admin-sidebar-menu-item-icon"></i>
+              <span
+                className={`admin-sidebar-menu-item-text ${sidebarNameToggle}`}
+              >
+                Users
+              </span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-sidebar-menu-item-container admin-sidebar-menu-item-container-active"
+                  : "admin-sidebar-menu-item-container"
+              }
+              to={"/admin-dash-services"}
+            >
+              <i className="fa-solid fa-list-check admin-sidebar-menu-item-icon"></i>
+              <span
+                className={`admin-sidebar-menu-item-text ${sidebarNameToggle}`}
+              >
+                Services
+              </span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-sidebar-menu-item-container admin-sidebar-menu-item-container-active"
+                  : "admin-sidebar-menu-item-container"
+              }
+              to={"/admin-dash-reviews"}
+            >
+              <i className="fa-solid fa-star-half-stroke admin-sidebar-menu-item-icon"></i>
+              <span
+                className={`admin-sidebar-menu-item-text ${sidebarNameToggle}`}
+              >
+                Reviews
+              </span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-sidebar-menu-item-container admin-sidebar-menu-item-container-active"
+                  : "admin-sidebar-menu-item-container"
+              }
+              to={"/admin-dash-payments"}
+            >
+              <i className="fa-solid fa-money-check-dollar admin-sidebar-menu-item-icon"></i>
+              <span
+                className={`admin-sidebar-menu-item-text ${sidebarNameToggle}`}
+              >
+                Payments
+              </span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-sidebar-menu-item-container admin-sidebar-menu-item-container-active"
+                  : "admin-sidebar-menu-item-container"
+              }
+              to={"/admin-dash-profile"}
+            >
+              <i className="fa-solid fa-user-large admin-sidebar-menu-item-icon"></i>
+              <span
+                className={`admin-sidebar-menu-item-text ${sidebarNameToggle}`}
+              >
+                Profile
               </span>
             </NavLink>
           </div>

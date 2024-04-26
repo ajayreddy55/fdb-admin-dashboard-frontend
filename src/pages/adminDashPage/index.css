@@ -25,12 +25,6 @@
   overflow-y: auto;
 }
 
-.admin-dashboard-main-heading-icon {
-  color: #818da1;
-  font-size: 21px;
-  margin-right: 5px;
-}
-
 .admin-dashboard-main-heading-text {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -67,10 +61,6 @@
 
 .admin-dashboard-card:hover {
   opacity: 1;
-}
-
-.admin-dashboard-card-doctor {
-  color: #303641;
 }
 
 .admin-dashboard-card .admin-dashboard-card-icon-container {

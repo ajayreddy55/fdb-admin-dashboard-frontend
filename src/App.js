@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import SignupPage from "./pages/AdminSignupPage";
 import AdminSignupVerifyPage from "./pages/adminSignupVerifyPage";
 import AdminLoginPage from "./pages/adminLoginPage";
@@ -9,10 +9,19 @@ import ProtectedRoute from "./components/protectedRoute/ProtectedRoute";
 import VendorDashboardPage from "./pages/vendorDashPage";
 import AdminDashPopularCategoriesPage from "./pages/popularCategoriesPage";
 import AdminDashSearchQueriesPage from "./pages/searchQueriesPage";
+import AdminDashboardUsersPage from "./pages/adminDashUsersPage";
+import AdminDashboardServicesPage from "./pages/adminDashServicesPage";
+import AdminDashboardReviewsPage from "./pages/adminDashReviewsPage";
+import AdminDashboardPaymentsPage from "./pages/adminDashPaymentsPage";
 
 const App = () => {
   return (
     <Routes>
+      <Route
+        exact
+        path="/"
+        element={<Navigate to="/admin-dashboard" replace={true} />}
+      />
       <Route exact path="/admin-signup" element={<SignupPage />} />
       <Route
         exact
@@ -31,6 +40,26 @@ const App = () => {
           exact
           path="/admin-search-queries"
           element={<AdminDashSearchQueriesPage />}
+        />
+        <Route
+          exact
+          path="/admin-dash-users"
+          element={<AdminDashboardUsersPage />}
+        />
+        <Route
+          exact
+          path="/admin-dash-services"
+          element={<AdminDashboardServicesPage />}
+        />
+        <Route
+          exact
+          path="/admin-dash-reviews"
+          element={<AdminDashboardReviewsPage />}
+        />
+        <Route
+          exact
+          path="/admin-dash-payments"
+          element={<AdminDashboardPaymentsPage />}
         />
       </Route>
       <Route exact path="/vendor-dashboard" element={<VendorDashboardPage />} />

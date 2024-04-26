@@ -1,0 +1,68 @@
+.admin-dashboard-review-dis-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.admin-dashboard-main-heading-text-reviews-dis {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  color: #4a4a4b;
+  margin-left: 5px;
+  margin-bottom: 3px;
+}
+
+.admin-dash-failure-view-container-reviews-dis {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-dash-failure-msg-dis {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  color: #292929;
+  font-weight: 600;
+  text-align: center;
+}
+
+.admin-dash-loader-view-container-reviews-dis {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-dash-empty-view-container-reviews-dis {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-dash-empty-msg-dis {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  color: #292929;
+  font-weight: 600;
+  text-align: center;
+}
+
+.admin-dash-table-container-reviews-dis {
+  padding: 8px;
+  border: 1px solid #b4b4b4;
+  border-radius: 10px;
+  width: 100%;
+  overflow: auto;
+}
+
+.admin-reviews-display-star-icon {
+  color: gold;
+  margin-right: 6px;
+}

@@ -35,7 +35,7 @@ const AdminDashNavbarCompo = () => {
               }
               to={"/admin-dashboard"}
             >
-              <i className="fa-solid fa-desktop admin-navbar-menu-item-icon"></i>
+              <i className="fa-solid fa-gauge-high admin-navbar-menu-item-icon"></i>
               <span className="admin-navbar-menu-item-text">Dashboard</span>
             </NavLink>
             <NavLink
@@ -64,6 +64,61 @@ const AdminDashNavbarCompo = () => {
               <span className="admin-navbar-menu-item-text">
                 Search Queries
               </span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-navbar-menu-item-container admin-navbar-menu-item-container-active"
+                  : "admin-navbar-menu-item-container"
+              }
+              to={"/admin-dash-users"}
+            >
+              <i className="fa-solid fa-users admin-navbar-menu-item-icon"></i>
+              <span className={"admin-navbar-menu-item-text"}>Users</span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-navbar-menu-item-container admin-navbar-menu-item-container-active"
+                  : "admin-navbar-menu-item-container"
+              }
+              to={"/admin-dash-services"}
+            >
+              <i className="fa-solid fa-list-check admin-navbar-menu-item-icon"></i>
+              <span className={"admin-navbar-menu-item-text"}>Services</span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-navbar-menu-item-container admin-navbar-menu-item-container-active"
+                  : "admin-navbar-menu-item-container"
+              }
+              to={"/admin-dash-reviews"}
+            >
+              <i className="fa-solid fa-star-half-stroke admin-navbar-menu-item-icon"></i>
+              <span className={"admin-navbar-menu-item-text"}>Reviews</span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-navbar-menu-item-container admin-navbar-menu-item-container-active"
+                  : "admin-navbar-menu-item-container"
+              }
+              to={"/admin-dash-payments"}
+            >
+              <i className="fa-solid fa-money-check-dollar admin-navbar-menu-item-icon"></i>
+              <span className={"admin-navbar-menu-item-text"}>Payments</span>
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "admin-navbar-menu-item-container admin-navbar-menu-item-container-active"
+                  : "admin-navbar-menu-item-container"
+              }
+              to={"/admin-dash-profile"}
+            >
+              <i className="fa-solid fa-user-large admin-navbar-menu-item-icon"></i>
+              <span className={"admin-navbar-menu-item-text"}>Profile</span>
             </NavLink>
           </div>
         </div>
