@@ -57,6 +57,7 @@ const AdminSidebarCompo = (props) => {
                   : "admin-sidebar-menu-item-container"
               }
               to={"/admin-dashboard"}
+              title="Dashboard"
             >
               <i className="fa-solid fa-gauge-high admin-sidebar-menu-item-icon"></i>
               <span
@@ -72,6 +73,7 @@ const AdminSidebarCompo = (props) => {
                   : "admin-sidebar-menu-item-container"
               }
               to={"/admin-popular-categories"}
+              title="Popular Categories"
             >
               {/* <i className="fa-solid fa-desktop admin-sidebar-menu-item-icon"></i> */}
               <TbCategoryFilled className="admin-sidebar-menu-item-icon admin-sidebar-menu-item-icon-category" />
@@ -88,6 +90,7 @@ const AdminSidebarCompo = (props) => {
                   : "admin-sidebar-menu-item-container"
               }
               to={"/admin-search-queries"}
+              title="Search Queries"
             >
               <i className="fa-solid fa-magnifying-glass admin-sidebar-menu-item-icon"></i>
               <span
@@ -103,6 +106,7 @@ const AdminSidebarCompo = (props) => {
                   : "admin-sidebar-menu-item-container"
               }
               to={"/admin-dash-users"}
+              title="Users"
             >
               <i className="fa-solid fa-users admin-sidebar-menu-item-icon"></i>
               <span
@@ -118,6 +122,7 @@ const AdminSidebarCompo = (props) => {
                   : "admin-sidebar-menu-item-container"
               }
               to={"/admin-dash-services"}
+              title="Services"
             >
               <i className="fa-solid fa-list-check admin-sidebar-menu-item-icon"></i>
               <span
@@ -133,6 +138,7 @@ const AdminSidebarCompo = (props) => {
                   : "admin-sidebar-menu-item-container"
               }
               to={"/admin-dash-reviews"}
+              title="Reviews"
             >
               <i className="fa-solid fa-star-half-stroke admin-sidebar-menu-item-icon"></i>
               <span
@@ -148,6 +154,7 @@ const AdminSidebarCompo = (props) => {
                   : "admin-sidebar-menu-item-container"
               }
               to={"/admin-dash-payments"}
+              title="Payments"
             >
               <i className="fa-solid fa-money-check-dollar admin-sidebar-menu-item-icon"></i>
               <span
@@ -163,6 +170,7 @@ const AdminSidebarCompo = (props) => {
                   : "admin-sidebar-menu-item-container"
               }
               to={"/admin-dash-profile"}
+              title="Profile"
             >
               <i className="fa-solid fa-user-large admin-sidebar-menu-item-icon"></i>
               <span

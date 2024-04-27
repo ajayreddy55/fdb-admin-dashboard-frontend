@@ -83,7 +83,7 @@
   background-color: #42424230;
 }
 
-.admin-sidebar-menu-item-container-active {
+.admin-sidebar-menu-container .admin-sidebar-menu-item-container-active {
   background-color: #f7f7f7;
 }
 

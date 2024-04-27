@@ -75,7 +75,7 @@
   background-color: #42424230;
 }
 
-.admin-navbar-menu-item-container-active {
+.admin-navbar-menu-container .admin-navbar-menu-item-container-active {
   background-color: #f7f7f7;
 }
 

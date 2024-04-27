@@ -40,6 +40,7 @@
   border: 1px solid #b4b4b4;
   border-radius: 10px;
   width: 100%;
+  overflow: auto;
 }
 
 .admin-dash-failure-view-container-payments {

@@ -205,7 +205,7 @@ const AdminDashboardReviewsPage = () => {
                   <td>{eachItem.address}</td>
                   <td>
                     <button
-                      className={`btn btn-outline-primary`}
+                      className={`btn text-primary`}
                       onClick={() => {
                         setShowPopup(true);
                         setClickedService(eachItem);

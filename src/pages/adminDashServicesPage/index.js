@@ -233,7 +233,7 @@ const AdminDashboardServicesPage = () => {
                   <td>
                     {eachItem.isApproved ? (
                       <button
-                        className={`btn btn-danger text-white ${
+                        className={`btn text-danger ${
                           isApproveButtonActive ? "" : "disabled"
                         }`}
                         onClick={() =>
@@ -247,7 +247,7 @@ const AdminDashboardServicesPage = () => {
                       </button>
                     ) : (
                       <button
-                        className={`btn btn-primary text-white ${
+                        className={`btn text-primary ${
                           isApproveButtonActive ? "" : "disabled"
                         }`}
                         onClick={() =>

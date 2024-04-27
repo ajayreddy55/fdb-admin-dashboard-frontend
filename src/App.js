@@ -13,6 +13,7 @@ import AdminDashboardUsersPage from "./pages/adminDashUsersPage";
 import AdminDashboardServicesPage from "./pages/adminDashServicesPage";
 import AdminDashboardReviewsPage from "./pages/adminDashReviewsPage";
 import AdminDashboardPaymentsPage from "./pages/adminDashPaymentsPage";
+import AdminDashboardProfilePage from "./pages/adminDashProfilePage";
 
 const App = () => {
   return (
@@ -60,6 +61,11 @@ const App = () => {
           exact
           path="/admin-dash-payments"
           element={<AdminDashboardPaymentsPage />}
+        />
+        <Route
+          exact
+          path="/admin-dash-profile"
+          element={<AdminDashboardProfilePage />}
         />
       </Route>
       <Route exact path="/vendor-dashboard" element={<VendorDashboardPage />} />
